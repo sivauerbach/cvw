@@ -44,8 +44,8 @@ fi
 ulimit -c 300000
 
 # load site licenses and tool locations
-if [ -e "${RISCV}"/site-setup.sh ]; then
-    source "${RISCV}"/site-setup.sh
+if [ -e ~/site-setup.sh ]; then
+    source ~/site-setup.sh
 else
     echo "site-setup.sh not found in \$RISCV directory. Rerun wally-toolchain-install.sh to automatically download it."
     exit 1
